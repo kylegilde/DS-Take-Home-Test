@@ -5,7 +5,7 @@
 
 1. In the Least Angle Regression model (LASSO), what does the alpha parameter control?
 
-In regularized regression, the alpha parameter controls the balance between the L1 and L2 regularizations.  If alpha is set to 1, this is known as a LASSO model. If it is set to 0, then this is a Ridge regression. If alpha is a value between 0 and 1, then this is an elastic net model, which mixes the effects of the LASSO and Ridge regressions.
+In regularized regression models, the alpha parameter controls the balance between the L1 and L2 regularizations.  If alpha is set to 1, this is known as a LASSO model. If it is set to 0, then this is a Ridge regression. If alpha is a value between 0 and 1, then this is an elastic net model, which mixes the effects of the LASSO and Ridge regressions.
 
 
 2. Is more data always better? (Explain Why)
@@ -26,7 +26,7 @@ Both types of regularizations are used to create better models by preventing ove
 
 5. Can a machine learning algorithm outperform a human? (Explain Why)
 
-Yes, it is possible for an ML algorithm to have a smaller classification error rate than a human performing the same task. This occurred with image classification tasks and deep learning models. These models benefit from having been trained with data that was labeled by several people. Thus, the collective error rate is much smaller than the individual error rate.
+Yes, it is possible for an ML algorithm to have a smaller classification error rate than a human performing the same task. This has occurred with image classification tasks and deep learning models. These models benefit from having been trained with data that was labeled by several people. Thus, the collective error rate used to train the model is much smaller than the individual error rate, and a well-trained model can outperform an individual's error rate.
 
 ## Statistics & Probability:
 
@@ -64,7 +64,7 @@ The 3 types of gradient descent (GD) exhibit tradeoffs in "computational effecie
 
 - Batch gradient descent (BDG) differs from SGD in the frequency of updates to the model. BGD calcalutes the errors for all the samples, but model is only updated with batches of new samples after the completion of a training epoch. The advantages of BGD over SGD include that it is less computationally expensive and the learning process can be more stable. The disadvantages include a greater likelihood of premature convergence at suboptimal parameters, and model updates can be slow and require the entire dataset to fit in memory.
 
-- Mini-batch GD is the most common GD technique used with deep learning models, and the one with which I have experience. It attempts to find a "balance between the robustness of stochastic gradient descent and the efficiency of batch gradient descent." In mini-batch GD, the model is still updated in batches, but it only calculates the model error on a subset of the samples instead of all the samples. This method is more computationally efficient than both BGD and SGD. The model updates are faster and one can update the model more frequently. The disadvantages include needing to tune mini-batch parameter and the needing multiple mini-batches to gain all the error information.
+- Mini-batch GD is the most common GD technique used with deep learning models, and the one with which I have experience. It attempts to find a "balance between the robustness of stochastic gradient descent and the efficiency of batch gradient descent." In mini-batch GD, the model is still updated in batches, but it only calculates the model error on a subset of the samples instead of all the samples. This method is more computationally efficient than both BGD and SGD. The model updates are faster, and one can update the model more frequently. The disadvantages include needing to tune mini-batch parameter and the needing multiple mini-batches to gain all the error information.
 
 Source: [A Gentle Introduction to Mini-Batch Gradient Descent and How to Configure Batch Size](https://machinelearningmastery.com/gentle-introduction-mini-batch-gradient-descent-configure-batch-size/)
 
